@@ -1,0 +1,174 @@
+.mac__group {
+  display: flex;
+}
+.mac__gr {
+  width: 500px;
+  overflow: hidden;
+}
+.mac__imgs {
+  display: flex;
+  transform: translateX(0px);
+  transition: trasnform 0.5s ease;
+  position: relative;
+  top: 90px;
+}
+.mac__img {
+  width: 400px;
+  margin-left: 100px;
+}
+.mac__img-minis {
+  display: flex;
+  position: absolute;
+  left: -480px;
+  bottom: 0;
+}
+.mac__img-mini {
+  width: 88px;
+  height: 88px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+.mac__img-mini:hover {
+  border-color: #111;
+}
+.mac__des {
+  position: relative;
+  top: 50px;
+}
+.mac__title {
+    font-size: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+.mac__subtitle {
+  font-size: 32px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.tex {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 30px 0 10px;
+}
+.mac__ram-btns {
+  display: flex;
+}
+.mac__hard-btns {
+  display: flex;
+}
+.mac__color-btns {
+  display: flex;
+}
+.mtbn {
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 12px;
+  border: 1px solid #888;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  margin-left: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mac__color-radius {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: rgb(210, 157, 0);
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+.mtbn:nth-child(1) {
+  margin-left: 0;
+}
+.mtbn:nth-child(2) .mac__color-radius {
+  background-color: silver;
+}
+.color-gold {
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.color-silver {
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mac__count {
+  display: flex;
+  margin-top: 24px;
+}
+.mac__count-minus {
+  width: 59px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #dbdbdb;
+  background-color: transparent;
+  cursor: pointer;
+}
+.mac__count-number {
+  width: 70px;
+  height: 40px;
+  border: 1px solid #dbdbdb;
+  background-color: transparent;
+}
+.mac__count-plus {
+  width: 59px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #dbdbdb;
+  background-color: transparent;
+  cursor: pointer;
+}
+.mac__price {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.mac__price-text {
+  font-size: 32px;
+  color: #1d1d1d;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.mac__price-sum {
+  font-size: 32px;
+  color: #1d1d1d;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+.tb1 {
+  display: none;
+}
+.active-border {
+  border: 2px solid blue;
+}
+.block {
+  display: block;
+}
+.active-border2 {
+  border: 2px solid #111;
+}
