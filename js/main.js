@@ -13,7 +13,15 @@ let elCompColor = document.querySelector('.comp-color');
 let elBtnColorOne = document.querySelector('.mac__color-btn-one');
 let elBtnColorTwo = document.querySelector('.mac__color-btn-two');
 let elMacPrice = document.querySelector('.mac__price-text');
+let elMiniImg = document.querySelectorAll('.mac__img-mini');
 let count = 1;
+
+elMiniImg.forEach((items) => {
+  items.addEventListener("click", (e) => {
+    elMiniImg.forEach(btn => btn.classList.remove('active-border2'))
+    e.target.classList.add('active-border2');
+  })
+})
 // console.log(elMacPrice.textContent * 3);
 elRamBtnOne.addEventListener("click", (e) => {
   elRamBtnOne.classList.add("active-border");
@@ -123,38 +131,3 @@ elMinusBtn.addEventListener("click", (e) => {
   document.querySelector('.uchikki').innerHTML = "000";
   }
 });
-document.querySelector('.mac-gold-mini').addEventListener("click", (e) => {
-  document.querySelector('.mac-gold-mini').classList.add('active-border2');
-  document.querySelector('.mac-top-mini').classList.remove('active-border2')
-  document.querySelector('.mac-key-mini').classList.remove('active-border2')
-  document.querySelector('.mac-right-mini').classList.remove('active-border2')
-  document.querySelector('.mac-gold-left-mini').classList.remove('active-border2')
-})
-  document.querySelector('.mac-top-mini').addEventListener("click", (e) => {
-    document.querySelector('.mac-top-mini').classList.add('active-border2')
-    document.querySelector('.mac-gold-mini').classList.remove('active-border2')
-    document.querySelector('.mac-key-mini').classList.remove('active-border2')
-    document.querySelector('.mac-right-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-left-mini').classList.remove('active-border2')
-  })
-  document.querySelector('.mac-key-mini').addEventListener("click", (e) => {
-    document.querySelector('.mac-top-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-mini').classList.remove('active-border2')
-    document.querySelector('.mac-key-mini').classList.add('active-border2')
-    document.querySelector('.mac-right-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-left-mini').classList.remove('active-border2')
-  })
-  document.querySelector('.mac-right-mini').addEventListener("click", (e) => {
-    document.querySelector('.mac-top-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-mini').classList.remove('active-border2')
-    document.querySelector('.mac-key-mini').classList.remove('active-border2')
-    document.querySelector('.mac-right-mini').classList.add('active-border2')
-    document.querySelector('.mac-gold-left-mini').classList.remove('active-border2')
-  })
-  document.querySelector('.mac-gold-left-mini').addEventListener("click", (e) => {
-    document.querySelector('.mac-top-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-mini').classList.remove('active-border2')
-    document.querySelector('.mac-key-mini').classList.remove('active-border2')
-    document.querySelector('.mac-right-mini').classList.remove('active-border2')
-    document.querySelector('.mac-gold-left-mini').classList.add('active-border2')
-  })
